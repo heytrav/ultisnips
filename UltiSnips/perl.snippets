@@ -127,4 +127,20 @@ while ($1) {
 
 endsnippet
 
+snippet package "package"
+package ${1: `!p snip.rv = snip.basename or "PackageName"`};
+endsnippet
+
+snippet strwar "strwar"
+use strict;
+use warnings;
+endsnippet
+
+snippet moose "moose"
+use Moose;
+use namespace::autoclean;
+${1:#}BEGIN {extends '${2:ParentClass}'};
+
+${0}
+endsnippet
 # vim:ft=snippets:
